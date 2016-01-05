@@ -1,15 +1,15 @@
 {
     "name": "static",
-    "version": "0.0.1",
+    "version": "0.0.4",
     "description": "VP static node server",
     "main": "server.js",
     "repository": {
         "type": "git",
-        "url": "https://github.com/venturepath/static"
+        "url": "https://github.com/adslaton/static"
     },
     "author": {
         "name": "A.D. Slaton",
-        "email": "ad.slaton@turner.com"
+        "email": "slaton.ad@gmail.com"
     },
     "dependencies": {
         "node-static": "0.7.7"
