@@ -1,3 +1,8 @@
-# Venture Path Node Static
+# Static Node Server
 
-A node static file server for Venture Path
+A static node file server
+
+
+## Container
+
+Has the ability to run as a container

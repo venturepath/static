@@ -1,17 +1,28 @@
 {
-    "name": "static",
-    "version": "0.0.4",
-    "description": "VP static node server",
-    "main": "server.js",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/adslaton/static"
-    },
-    "author": {
-        "name": "A.D. Slaton",
-        "email": "slaton.ad@gmail.com"
-    },
-    "dependencies": {
-        "node-static": "0.7.7"
-    }
+  "name": "static",
+  "version": "0.0.4",
+  "description": "Static node server",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/venturepath/static"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "docker-build": "docker build -t $(jq -r .name package.json) .",
+    "docker-run": "docker run -dp 5000:5000 $(jq -r .name package.json)",
+    "generate-dockerfile": "./generate-dockerfile.sh",
+    "start-docker": "npm run generate-dockerfile && npm run docker-build && npm run docker-run"
+  },
+  "author": {
+    "name": "A.D. Slaton",
+    "email": "slaton.ad@gmail.com"
+  },
+  "dependencies": {
+    "node-static": "0.7.7"
+  },
+  "engines": {
+    "node": "5.9.0",
+    "npm": "3.3.4"
+  }
 }
