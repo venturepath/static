@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Example</title>
+        <style type="text/css">
+            .headline {color:black}
+            .button {display:none}
+        </style>
+    </head>
+    <body>
+        <h1 id="headline" class="headline"></h1>
+        <h2></h2>
+        <div id="item"></div>
+        <button id="button" class="button">BUTTON</button>
+        <script>
+            var item = document.getElementById('headline');
+            function hi () {
+                item.innerHTML = "Hi!";
+            }
+            document.getElementById('button').addEventListener('click', hi);
+        </script>
+    </body>
+</html>
